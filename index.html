@@ -4,18 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>Jordan Henderson - Jellyfish presentation</title>
 
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/theme/blood.css">
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css">
   </head>
   <body>
-
-
     <div class="reveal">
       <div class="slides">
         <section data-markdown="slides.md"
@@ -28,22 +26,51 @@
       </div>
     </div>
 
-
     <script src="dist/reveal.js"></script>
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
-    <script src="plugin/math/math.js"></script>
+    <script src="plugin/highlightjs-supercollider/supercollider.js"></script>
+
     <script>
     // More info about initialization & config:
     // - https://revealjs.com/initialization/
     // - https://revealjs.com/config/
+
     Reveal.initialize({
+      width: 1920,
+      height: 1024,
+      controls: true,
       hash: true,
-      view: 'scroll',
+      progress: true,
+      autoAnimate: true,
+      autoAnimateEasing: 'ease',
+      autoAnimateDuration: 1.0,
+      autoAnimateUnmatched: true,
+      autoAnimateStyles: [
+        'opacity',
+        'color',
+        'background-color',
+        'padding',
+        'font-size',
+        'line-height',
+        'letter-spacing',
+        'border-width',
+        'border-color',
+        'border-radius',
+        'outline',
+        'outline-offset'
+      ],
+      highlight: {
+        beforeHighlight: hljs => hljs.registerLanguage("supercollider", hljsDefineSuperCollider)
+      },
 
       // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+      plugins: [ 
+        RevealMarkdown,
+        RevealHighlight,
+        RevealNotes
+      ]
     });
     </script>
   </body>
