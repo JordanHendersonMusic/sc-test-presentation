@@ -15,6 +15,6 @@ Thing 3 <!-- .element: class="fragment" -->
 
 ---
 
-
 ```supercollider
+LFO.ar();
 ```
