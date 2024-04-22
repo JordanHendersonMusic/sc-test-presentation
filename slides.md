@@ -3,9 +3,9 @@
 ---
 
 
-Thing 1<!-- .element: class="fragment" -->
-Thing 2 <!-- .element: class="fragment" -->
-Thing 3 <!-- .element: class="fragment" -->
+* Thing 1<!-- .element: class="fragment" -->
+* Thing 2<!-- .element: class="fragment" -->
+* Thing 3<!-- .element: class="fragment" -->
 
 ---
 
