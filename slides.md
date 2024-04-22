@@ -2,6 +2,12 @@
 
 ---
 
+```supercollider
+{ SinOsc.ar() }.play
+```
+
+---
+
 
 * Thing 1<!-- .element: class="fragment" -->
 * Thing 2<!-- .element: class="fragment" -->
